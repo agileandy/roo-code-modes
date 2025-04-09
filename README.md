@@ -42,7 +42,8 @@ The swarm consists of the following specialized agents:
 
 The intended workflow emphasizes TDD and early setup:
 
-```mermaid
+```
+mermaid
 graph TD
     A[Start Project] --> B{Design & Plan};
     B --> C[Architect Defines Plan];
