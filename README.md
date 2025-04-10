@@ -36,7 +36,7 @@ The swarm consists of the following specialized agents:
 *   **🧪 Software Engineer in Test (SET):** Writes failing tests first (Red phase) based on requirements, defining "done". Maintains the test suite (part of Source Code).
 *   **💻 Software Engineer:** Writes the minimum code to pass tests (Green phase), then refactors code and tests for quality and maintainability. Updates `activeDevelopment.md` and `.aiderrules`.
 *   **🚀 DevOps Engineer:** Manages the codebase (Git), CI/CD pipelines, environments, deployments, and generates user-facing `CHANGELOG.md` release notes. Sets up the repository early and maintains `techEnvironment.md`.
-*   **✍️ Technical Writer:** Ensures all documentation artifacts are clear, concise, up-to-date, and non-redundant. Guards the integrity of the project's recorded memory across all `.md` files.
+*   **📋 Audit:** Undertakes an audit of the project looking at document consistency, compliance with code management plan, and alignment with development standards.
 
 ## The Workflow
 
@@ -54,7 +54,7 @@ graph TD
     E --> G{Write Tests (SET) -> Commit to Repo};
     F --> G;
     G --> H{Write Code (Engineer) -> Commit to Repo};
-    H --> I[Update Docs (Writer/Eng) -> Commit to Repo];
+    H --> I[Update Docs (Writer/Eng) -> Commit to Repo & Merge];
     I --> J{Build & Deploy (DevOps)};
     J --> K[Release Notes (DevOps) -> Update CHANGELOG.md];
     K --> L[Cycle Complete/Next Feature];
